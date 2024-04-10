@@ -1,0 +1,15 @@
+Usage:
+
+tof [OPTION]... [STRING] [FILE]
+
+If no arguments are provided, tof read from the standard input (stdin)
+
+Options:
+
+  -s, --string         Process the [STRING] argument
+  -f, --file           Process the [FILE] argument
+  -i, --inplace        Only with the -f flag. Replace the content of the given [FILE]  with the formatted output
+  -o, --output         Define where the output is sent; to stdout by default, or to any file of your choice (in current working directory if no path is given)
+  -h, --help           Print this help message and exit
+  -d, --doc            Display the documentation where you can learn about the tags used in the input (with examples)
+  -v, --version        Print the app version and exit
