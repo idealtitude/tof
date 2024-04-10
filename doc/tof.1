@@ -1,0 +1,25 @@
+.\" Manpage for tof.
+.\" Contact idealtitude@gmx.com to correct errors or typos.
+.TH man 1 "10 April 2024" "Version 0.1.0" "tof man page"
+.SH NAME
+tof \- Terminal output strings formatting
+.SH SYNOPSIS
+tof [STRING] [FILE] [OPTIONS]...
+.SH DESCRIPTION
+tof takes in input a string or a file, parse it for to find tags and return a formatted strings with corresponding ascci escape sequences to found tags.
+The output can be written into a file, replace the content of the original file passed as argument with the formatted cnontent, or to the standard output.
+If no arguments are provided, tof read from standard input, line by line until the stop commande is entered (see documentation for commands list in interactive mode).
+.SH OPTIONS
+top offers the following options
+.TP
+\fB-h\fP , \fB--help\fp
+Print the help message and exit.
+.TP
+\fB-v\fP , \fB--version\fp
+Print the version number and exit.
+.SH SEE ALSO
+
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Stephane aka idealtitude (idealtitude@gmx.com)
