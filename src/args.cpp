@@ -1,7 +1,7 @@
 #include "args.h"
 
 Args::Args(const std::vector<std::string_view>& args_):
-	args_status(), arguments(args_);
+	args_status(), user_input(), arguments(args_);
 {}
 
 void Args::parse_args()
@@ -59,5 +59,14 @@ void Args::parse_args()
 			file_output = arg;
 			continue;
 		}
+	}
+
+	user_input.params["string_input"] = string_input;
+	user_input.params["file_input"] = file_input;
+	user_input.params["file_output"] = file_output;
+
+	if (inplace)
+	{
+		user_input.params["inplace"] = "true";
 	}
 }
